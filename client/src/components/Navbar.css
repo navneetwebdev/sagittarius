@@ -1,0 +1,76 @@
+.Header {
+  background-color: #14b694;
+}
+
+.Header_container {
+  margin: 0 auto;
+  display: flex;
+  max-width: 132rem;
+  justify-content: space-between;
+  position: relative;
+}
+
+@font-face {
+  font-family: 'The Smile';
+  src: url('../fonts/TheSmile.otf') format('opentype');
+}
+
+.Header .logoLink {
+  text-decoration: none;
+}
+
+.Header h1 {
+  font-size: 3rem;
+  padding: 0.4rem 0;
+  color: #cf466f;
+  display: flex;
+  align-items: center;
+  font-family: 'The Smile', serif;
+}
+
+.Header h1 img {
+  width: 3.6rem;
+}
+
+.Header .link-container {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+}
+
+.Header .navlink:link,
+.Header .navlink:visited {
+  text-decoration: none;
+  display: inline-block;
+  font-weight: 600;
+  color: #cf466f;
+  font-size: 1.6rem;
+  margin-left: 3.2rem;
+  padding: 0 1.2rem;
+}
+
+.Header .navlink:hover,
+.Header .navlink:active {
+  color: #d1b4b3;
+}
+
+@media only screen and (max-width: 732px) {
+  .Header_container {
+    flex-direction: column;
+  }
+  .Header .link-container {
+    justify-content: center;
+  }
+}
+
+@media only screen and (max-width: 618px) {
+  .Header .link-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .Header .navlink:link,
+  .Header .navlink:visited {
+    text-decoration: underline;
+    margin-left: 0.8rem;
+  }
+}

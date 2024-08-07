@@ -1,0 +1,235 @@
+.Home .section1_container,
+.Home .section3_container {
+  background-color: #14b694;
+}
+
+.Home .section2_container,
+.Home .section4_container {
+  background-color: white;
+}
+
+.Home .section1,
+.Home .section2,
+.Home .section3,
+.Home .section4 {
+  display: flex;
+  align-items: center;
+  max-width: 107rem;
+  background-color: white;
+  color: #333;
+  font-family: 'Noto Sans', sans-serif;
+}
+
+.Home .section1,
+.Home .section3 {
+  margin-left: 6.4rem;
+}
+
+.Home .section2,
+.Home .section4 {
+  justify-content: right;
+  margin-right: 6.4rem;
+  margin-left: auto;
+}
+
+.Home .section1_img,
+.Home .section2_img,
+.Home .section3_img,
+.Home .section4_img {
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4.8rem 0;
+}
+
+.Home .section1_img img,
+.Home .section2_img img,
+.Home .section3_img img,
+.Home .section4_img img {
+  width: 80%;
+}
+
+.Home .section1_text,
+.Home .section3_text {
+  padding-left: 9.6rem;
+}
+
+.Home .section2_text,
+.Home .section4_text {
+  padding-right: 9.6rem;
+}
+
+.Home .section1_text p,
+.Home .section2_text p,
+.Home .section3_text p,
+.Home .section4_text p {
+  width: 64rem;
+  font-size: 2rem;
+  line-height: 160%;
+}
+
+.Home .section1 {
+  background-color: #14b694;
+}
+
+.Home .section3 {
+  background-color: #14b694;
+}
+
+.Home .footer {
+  font-size: 1.6rem;
+  background-color: #14b694;
+  padding: 1.6rem 0;
+  text-align: center;
+  color: #333;
+  padding-right: 6.4rem;
+}
+
+.Home .footer a:link,
+.Home .footer a:visited {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 2.4rem;
+  width: 3.2rem;
+  height: 3.2rem;
+  margin-left: 1.2rem;
+  padding: 0.4rem;
+  vertical-align: middle;
+  background-color: rgb(224, 224, 224);
+  color: #4e9cb5;
+}
+
+.Home .footer a:hover,
+.Home .footer a:active {
+  color: #327ccb;
+}
+
+@media only screen and (max-width: 1078px) {
+  .Home .section1,
+  .Home .section2,
+  .Home .section3,
+  .Home .section4 {
+    max-width: none;
+  }
+  .Home .section1,
+  .Home .section3 {
+    margin-left: 0;
+  }
+
+  .Home .section2,
+  .Home .section4 {
+    margin-right: 0;
+  }
+
+  .Home .section1_img,
+  .Home .section2_img,
+  .Home .section3_img,
+  .Home .section4_img {
+    width: 30%;
+  }
+
+  .Home .section1_text,
+  .Home .section2_text,
+  .Home .section3_text,
+  .Home .section4_text {
+    width: 70%;
+  }
+
+  .Home .section1_text,
+  .Home .section3_text {
+    padding-left: 0;
+    display: flex;
+    justify-content: center;
+  }
+
+  .Home .section2_text,
+  .Home .section4_text {
+    padding-right: 0;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media only screen and (max-width: 732px) {
+  .Home .section1_text,
+  .Home .section3_text,
+  .Home .section2_text,
+  .Home .section4_text {
+    padding: 1.2rem;
+  }
+
+  .Home .section1_text p,
+  .Home .section2_text p,
+  .Home .section3_text p,
+  .Home .section4_text p {
+    width: none;
+  }
+}
+
+@media only screen and (max-width: 618px) {
+  .Home .section1,
+  .Home .section2,
+  .Home .section3,
+  .Home .section4 {
+    flex-direction: column;
+  }
+
+  .Home .section2 :nth-child(1),
+  .Home .section4 :nth-child(1) {
+    order: 2;
+  }
+  .Home .section2 :nth-child(2),
+  .Home .section4 :nth-child(4) {
+    order: 1;
+  }
+
+  .Home .section1_img,
+  .Home .section2_img,
+  .Home .section3_img,
+  .Home .section4_img {
+    padding: 0.8rem;
+    width: 30%;
+  }
+
+  .Home .section1_img img,
+  .Home .section2_img img,
+  .Home .section3_img img,
+  .Home .section4_img img {
+    width: 100%;
+  }
+
+  .Home .section1_text,
+  .Home .section2_text,
+  .Home .section3_text,
+  .Home .section4_text {
+    width: 64rem;
+  }
+}
+
+@media only screen and (max-width: 516px) {
+  .Home .section1_img,
+  .Home .section2_img,
+  .Home .section3_img,
+  .Home .section4_img {
+    padding: 0.8rem;
+    width: 40%;
+  }
+
+  .Home .section1_text,
+  .Home .section2_text,
+  .Home .section3_text,
+  .Home .section4_text {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .Home .section1_img,
+  .Home .section2_img,
+  .Home .section3_img,
+  .Home .section4_img {
+    padding: 0.8rem;
+    width: 50%;
+  }
+}

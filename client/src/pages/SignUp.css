@@ -1,0 +1,162 @@
+.SignUp {
+  height: calc(100vh - 55px);
+  background: url(../images/signup.webp);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.SignUp .signup-card {
+  position: absolute;
+  top: 50%;
+  right: 16rem;
+  transform: translate(0, -50%);
+  width: 38.4rem;
+}
+
+.SignUp .signup-card .welcome {
+  color: white;
+  font-size: 4.8rem;
+  margin-bottom: 1.6rem;
+}
+
+.SignUp .signup-card label {
+  color: white;
+  display: block;
+  opacity: 0.5;
+}
+
+.SignUp .signup-card input {
+  color: white;
+  display: inline-block;
+  font-size: 1.2rem;
+  margin: 1.2rem 0rem 2.4rem;
+  padding-bottom: 0.8rem;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid white;
+  background-color: transparent;
+  width: 100%;
+}
+
+.SignUp .signup-card input::placeholder {
+  color: #c4d3d7;
+}
+
+.SignUp .signup-card select {
+  color: #c4d3d7;
+  font-size: 1.2rem;
+  margin: 1.2rem 0rem 2.4rem;
+  padding: 0.8rem;
+  outline: none;
+  background-color: transparent;
+}
+
+.SignUp .signup-card select option {
+  background-color: black;
+}
+
+.SignUp .signup-card .mbti {
+  display: inline-block;
+  margin-left: 2.4rem;
+  color: white;
+}
+
+.SignUp .signup-card button {
+  display: block;
+  color: white;
+  background-color: rgb(128, 128, 128);
+  padding: 0.8rem 4.8rem;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  /* margin-top: 0.8rem; */
+}
+
+.SignUp .signup-card h5 {
+  color: #c3c5c6;
+  margin-top: 1.6rem;
+}
+
+.SignUp .signup-card h5 a:link,
+.SignUp .signup-card h5 a:visited {
+  text-decoration: none;
+  color: rgb(166, 166, 166);
+}
+
+@media only screen and (max-width: 1092px) {
+  .SignUp .signup-card {
+    right: 9.6rem;
+    width: 25.6rem;
+  }
+}
+
+@media only screen and (max-width: 791px) {
+  .SignUp .signup-card {
+    right: 9.6rem;
+    width: 19.2rem;
+  }
+}
+@media only screen and (max-width: 620px) {
+  .SignUp {
+    height: calc(100vh - 132px);
+  }
+  .SignUp .signup-card {
+    top: 60%;
+    transform: translate(0, -50%);
+    right: 6.4rem;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .SignUp {
+    background: none;
+    border-top: 1px solid black;
+  }
+  .SignUp .signup-card {
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 70%;
+  }
+  .SignUp .signup-card .welcome {
+    color: #333;
+  }
+  .SignUp .signup-card label {
+    color: black;
+    font-weight: 700;
+  }
+
+  .SignUp .signup-card input {
+    color: #333;
+    border-bottom: 1px solid #333;
+  }
+  .SignUp .signup-card input::placeholder {
+    color: #333;
+  }
+  .SignUp .signup-card select {
+    color: #333;
+  }
+  .SignUp .signup-card select option {
+    background-color: white;
+    color: #cf466f;
+  }
+
+  .SignUp .signup-card .mbti {
+    color: #cf466f;
+  }
+
+  .SignUp .signup-card button {
+    color: #cf466f;
+    background-color: #14b694;
+  }
+
+  .SignUp .signup-card h5 {
+    color: #c3c5c6;
+    font-weight: 900;
+  }
+
+  .SignUp .signup-card h5 a:link,
+  .SignUp .signup-card h5 a:visited {
+    color: rgb(166, 166, 166);
+  }
+}

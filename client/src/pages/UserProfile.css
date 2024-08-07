@@ -1,0 +1,104 @@
+.UserProfile {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.UserProfile .card {
+  margin: 6.4rem auto 0;
+  text-align: left;
+}
+
+.UserProfile .card .details {
+  border: 1px solid black;
+  border-radius: 3px;
+}
+
+.UserProfile .card h1 {
+  font-family: 'Work Sans', sans-serif;
+  font-size: 4.8rem;
+  font-weight: 400;
+  margin-top: 35rem;
+  margin-right: 12.8rem;
+  color: #333;
+  margin-left: 2rem;
+}
+
+.UserProfile .card h2 {
+  margin-top: 0.4rem;
+  margin-bottom: 4.8rem;
+  margin-right: 12.8rem;
+  margin-left: 2.4rem;
+  color: #cf466f;
+}
+
+.UserProfile .books_collection {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: white;
+}
+
+.UserProfile .books_collection .book_space {
+  width: 25%;
+}
+
+.UserProfile .book {
+  width: 70%;
+  margin: 4.8rem auto;
+  border: 1px solid black;
+  height: 38.4rem;
+  display: flex;
+  flex-direction: column;
+  border-radius: 3px;
+  background-color: #d1b4b3;
+}
+
+.UserProfile .book h1 {
+  font-size: 2.4rem;
+  flex-grow: 4;
+  padding-left: 1.2rem;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
+.UserProfile .book h2 {
+  text-align: right;
+  flex-grow: 1.7;
+  padding-right: 1.2rem;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+}
+
+@media only screen and (max-width: 1021px) {
+  .UserProfile .books_collection .book_space {
+    width: 33.33%;
+  }
+}
+
+@media only screen and (max-width: 753px) {
+  .UserProfile .books_collection .book_space {
+    width: 50%;
+  }
+
+  .UserProfile .book {
+    width: 60%;
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  .UserProfile .books_collection .book_space {
+    width: 100%;
+  }
+
+  .UserProfile .book {
+    width: 40%;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .UserProfile .book {
+    width: 45%;
+  }
+}
